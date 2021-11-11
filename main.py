@@ -103,41 +103,41 @@ def info():
 
 
 #monday
-schedule.every().monday.at("08:00").do(thai)
-schedule.every().monday.at("09:00").do(math_01)
-schedule.every().monday.at("10:00").do(eng_teacher)
-schedule.every().monday.at("11:00").do(sci)
-schedule.every().monday.at("13:00").do(internet)
-schedule.every().monday.at("14:00").do(HSK)
+schedule.every().monday.at("07:55").do(thai)
+schedule.every().monday.at("08:55").do(math_01)
+schedule.every().monday.at("09:55").do(eng_teacher)
+schedule.every().monday.at("10:55").do(sci)
+schedule.every().monday.at("12:55").do(internet)
+schedule.every().monday.at("13:55").do(HSK)
 
 #tuesday
-schedule.every().tuesday.at("08:00").do(math_01)
-schedule.every().tuesday.at("09:00").do(SOC)
-schedule.every().tuesday.at("10:00").do(sci)
-schedule.every().tuesday.at("11:00").do(free)
-schedule.every().tuesday.at("13:00").do(PE)
-schedule.every().tuesday.at("14:00").do(Sub)
+schedule.every().tuesday.at("07:55").do(math_01)
+schedule.every().tuesday.at("08:55").do(SOC)
+schedule.every().tuesday.at("09:55").do(sci)
+schedule.every().tuesday.at("10:55").do(free)
+schedule.every().tuesday.at("12:55").do(PE)
+schedule.every().tuesday.at("13:55").do(Sub)
 
 #wednesday
-schedule.every().wednesday.at("08:00").do(Art)
-schedule.every().wednesday.at("09:00").do(math_02)
-schedule.every().wednesday.at("10:00").do(design)
-schedule.every().wednesday.at("11:00").do(CHN)
-schedule.every().wednesday.at("13:00").do(eng_teacher)
+schedule.every().wednesday.at("07:55").do(Art)
+schedule.every().wednesday.at("08:55").do(math_02)
+schedule.every().wednesday.at("09:55").do(design)
+schedule.every().wednesday.at("10:55").do(CHN)
+schedule.every().wednesday.at("12:55").do(eng_teacher)
 
 #thursday
-schedule.every().thursday.at("08:00").do(eng)
-schedule.every().thursday.at("09:00").do(math_01)
-schedule.every().thursday.at("10:00").do(thai)
-schedule.every().thursday.at("11:00").do(h_work)
-schedule.every().thursday.at("13:00").do(SOC)
+schedule.every().thursday.at("07:55").do(eng)
+schedule.every().thursday.at("08:55").do(math_01)
+schedule.every().thursday.at("09:55").do(thai)
+schedule.every().thursday.at("10:55").do(h_work)
+schedule.every().thursday.at("12:55").do(SOC)
 
 #friday
-schedule.every().friday.at("08:00").do(math_02)
-schedule.every().friday.at("09:00").do(sci)
-schedule.every().friday.at("10:00").do(PE_02)
-schedule.every().friday.at("11:00").do(history)
-schedule.every().friday.at("13:00").do(info)
+schedule.every().friday.at("07:55").do(math_02)
+schedule.every().friday.at("08:55").do(sci)
+schedule.every().friday.at("09:55").do(PE_02)
+schedule.every().friday.at("10:55").do(history)
+schedule.every().friday.at("12:55").do(info)
 
 
 while True:
