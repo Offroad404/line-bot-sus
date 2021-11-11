@@ -7,7 +7,7 @@ token = 'RtZzP1dU0dvMbGoIutHaNR0ETzRYyyTpgrAnRYLTzP4'
 headers = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+token}
 
 def thai():
-    msg = 'ภาษาไทย: ---'
+    msg = 'ภาษาไทย: https://meet.google.com/ees-nmdo-doz?authuser=0'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
@@ -62,7 +62,7 @@ def Art():
     print (r.text)
 
 def math_02():
-    msg = 'เรขาคณิตและสถิติ: ---'
+    msg = 'เรขาคณิตและสถิติ: https://meet.google.com/wwj-fwoe-wgd?authuser=0'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
