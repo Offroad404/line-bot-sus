@@ -6,8 +6,13 @@ url = 'https://notify-api.line.me/api/notify'
 token = 'RtZzP1dU0dvMbGoIutHaNR0ETzRYyyTpgrAnRYLTzP4'
 headers = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+token}
 
+def homeroom():
+    msg = 'โฮมรูม: https://meet.google.com/kro-atfm-qqn?authuser=0'
+    r = requests.post(url, headers=headers, data = {'message':msg})
+    print (r.text)
+
 def thai():
-    msg = 'ภาษาไทย: https://meet.google.com/ees-nmdo-doz?authuser=0'
+    msg = 'ภาษาไทย: ---'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
@@ -62,7 +67,7 @@ def Art():
     print (r.text)
 
 def math_02():
-    msg = 'เรขาคณิตและสถิติ: https://meet.google.com/wwj-fwoe-wgd?authuser=0'
+    msg = 'เรขาคณิตและสถิติ: ---'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
@@ -103,6 +108,7 @@ def info():
 
 
 #monday
+schedule.every().monday.at("07:45").do(homeroom)
 schedule.every().monday.at("07:55").do(thai)
 schedule.every().monday.at("08:55").do(math_01)
 schedule.every().monday.at("09:55").do(eng_teacher)
@@ -111,6 +117,7 @@ schedule.every().monday.at("12:55").do(internet)
 schedule.every().monday.at("13:55").do(HSK)
 
 #tuesday
+schedule.every().tuesday.at("07:45").do(homeroom)
 schedule.every().tuesday.at("07:55").do(math_01)
 schedule.every().tuesday.at("08:55").do(SOC)
 schedule.every().tuesday.at("09:55").do(sci)
@@ -119,6 +126,7 @@ schedule.every().tuesday.at("12:55").do(PE)
 schedule.every().tuesday.at("13:55").do(Sub)
 
 #wednesday
+schedule.every().wednesday.at("07:45").do(homeroom)
 schedule.every().wednesday.at("07:55").do(Art)
 schedule.every().wednesday.at("08:55").do(math_02)
 schedule.every().wednesday.at("09:55").do(design)
@@ -126,6 +134,7 @@ schedule.every().wednesday.at("10:55").do(CHN)
 schedule.every().wednesday.at("12:55").do(eng_teacher)
 
 #thursday
+schedule.every().thursday.at("07:45").do(homeroom)
 schedule.every().thursday.at("07:55").do(eng)
 schedule.every().thursday.at("08:55").do(math_01)
 schedule.every().thursday.at("09:55").do(thai)
@@ -133,11 +142,13 @@ schedule.every().thursday.at("10:55").do(h_work)
 schedule.every().thursday.at("12:55").do(SOC)
 
 #friday
+schedule.every().friday.at("07:45").do(homeroom)
 schedule.every().friday.at("07:55").do(math_02)
 schedule.every().friday.at("08:55").do(sci)
 schedule.every().friday.at("09:55").do(PE_02)
 schedule.every().friday.at("10:55").do(history)
 schedule.every().friday.at("12:55").do(info)
+
 
 
 while True:
