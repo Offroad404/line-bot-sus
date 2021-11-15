@@ -3,7 +3,7 @@ import schedule
 import time
 
 url = 'https://notify-api.line.me/api/notify'
-token = 'RtZzP1dU0dvMbGoIutHaNR0ETzRYyyTpgrAnRYLTzP4'
+token = 'KoqfUXrKaXMdaoRJARykIWCByiuk1kacYk0Wc0sm1CZ'
 headers = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+token}
 
 def homeroom():
