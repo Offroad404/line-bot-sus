@@ -6,13 +6,18 @@ url = 'https://notify-api.line.me/api/notify'
 token = 'KoqfUXrKaXMdaoRJARykIWCByiuk1kacYk0Wc0sm1CZ'
 headers = {'content-type':'application/x-www-form-urlencoded','Authorization':'Bearer '+token}
 
+def homeroom_2():
+    msg = 'โฮมรูม3/1: https://meet.google.com/ykk-xxnm-bxa?authuser=0'
+    r = requests.post(url, headers=headers, data = {'message':msg})
+    print (r.text)
+
 def homeroom():
-    msg = 'โฮมรูม: https://meet.google.com/kro-atfm-qqn?authuser=0'
+    msg = 'โฮมรูมห้องC: https://meet.google.com/kro-atfm-qqn?authuser=0'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
 def thai():
-    msg = 'ภาษาไทย: ---'
+    msg = 'ภาษาไทย: https://meet.google.com/ees-nmdo-doz?authuser=0'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
@@ -67,7 +72,7 @@ def Art():
     print (r.text)
 
 def math_02():
-    msg = 'เรขาคณิตและสถิติ: ---'
+    msg = 'เรขาคณิตและสถิติ: https://meet.google.com/wwj-fwoe-wgd?authuser=0'
     r = requests.post(url, headers=headers, data = {'message':msg})
     print (r.text)
 
@@ -108,7 +113,7 @@ def info():
 
 
 #monday
-schedule.every().monday.at("07:45").do(homeroom)
+schedule.every().monday.at("07:45").do(homeroom_2)
 schedule.every().monday.at("07:55").do(thai)
 schedule.every().monday.at("08:55").do(math_01)
 schedule.every().monday.at("09:55").do(eng_teacher)
@@ -126,7 +131,7 @@ schedule.every().tuesday.at("12:55").do(PE)
 schedule.every().tuesday.at("13:55").do(Sub)
 
 #wednesday
-schedule.every().wednesday.at("07:45").do(homeroom)
+schedule.every().wednesday.at("07:45").do(homeroom_2)
 schedule.every().wednesday.at("07:55").do(Art)
 schedule.every().wednesday.at("08:55").do(math_02)
 schedule.every().wednesday.at("09:55").do(design)
@@ -142,7 +147,7 @@ schedule.every().thursday.at("10:55").do(h_work)
 schedule.every().thursday.at("12:55").do(SOC)
 
 #friday
-schedule.every().friday.at("07:45").do(homeroom)
+schedule.every().friday.at("07:45").do(homeroom_2)
 schedule.every().friday.at("07:55").do(math_02)
 schedule.every().friday.at("08:55").do(sci)
 schedule.every().friday.at("09:55").do(PE_02)
